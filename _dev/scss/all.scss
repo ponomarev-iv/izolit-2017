@@ -1,0 +1,14 @@
+/**
+ * Created by Pompo on 18.06.2017.
+ */
+@import "inc/reset";
+@import "inc/media-mixin";
+@import "inc/var";
+@import "inc/layout";
+
+//blocks
+@import "inc/blocks/header";
+@import "inc/blocks/nav";
+@import "inc/blocks/search";
+@import "inc/blocks/hero";
+@import "inc/blocks/mobile-menu";

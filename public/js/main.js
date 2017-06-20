@@ -1,0 +1,1 @@
+function mobileMenu(){var e=$(".js-mobile"),n=$(".js-mobile-menu");$(e).click(function(){$(this).toggleClass("open"),$(n).toggleClass("is-open")})}$(document).ready(function(){mobileMenu()});

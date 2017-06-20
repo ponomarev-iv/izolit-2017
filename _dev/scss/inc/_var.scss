@@ -1,0 +1,30 @@
+/**
+ * Created by Pompo on 19.06.2017.
+ */
+//color
+$bg-color: #f2f2f2;
+$border-color: #cccccc;
+$black: #333333;
+$white: #ffffff;
+$main-color: #197493;
+$action-color: #FF8F00;
+
+//plh
+%clr{
+
+  &:after{
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+%container{
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 20px;
+
+  @include respondTo(small){
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,59 @@
+/**
+ * Created by Pompo on 20.06.2017.
+ */
+.nav{
+  background-color: $main-color;
+  padding: 15px 0;
+
+  & .container{
+    @extend %clr;
+  }
+
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    float: left;
+
+    @include respondTo(mobile){
+      display: none;
+    }
+  }
+
+  &__search{
+    width: 20%;
+    float: right;
+
+    @include respondTo(tablet){
+      width: 25%;
+    }
+
+    @include respondTo(mobile){
+      width: 60%;
+      float: none;
+    }
+
+    @include respondTo(small){
+      width: 100%;
+    }
+  }
+
+  &__link{
+    color: $white;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 40px;
+
+    @include respondTo(tablet){
+      font-size: 1em;
+    }
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__sub-menu{
+    display: none;
+  }
+}

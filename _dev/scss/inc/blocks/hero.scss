@@ -1,0 +1,69 @@
+/**
+ * Created by Pompo on 20.06.2017.
+ */
+.hero{
+  height: 0;
+  background: url('../img/bg-hero.png') no-repeat scroll transparent 50% 0 / cover;
+  padding-top: 50px;
+  padding-bottom: 31.25%;
+  position: relative;
+
+  & .container{
+
+    @include respondTo(mobile){
+      padding: 0;
+    }
+  }
+
+  &__txt-block{
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.8);
+    color: $white;
+    padding: 40px 30px;
+    width: 65%;
+
+    @include respondTo(tablet){
+      padding: 20px;
+    }
+
+    @include respondTo(mobile){
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      border-radius: 0;
+    }
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 2.25em;
+    margin: 0 0 .75em;
+
+    @include respondTo(tablet){
+      font-size: 1.75em;
+    }
+
+    @include respondTo(mobile){
+      margin: 0;
+    }
+
+    @include respondTo(small){
+      font-size: 1.15em;
+    }
+
+  }
+
+  &__txt{
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+
+    @include respondTo(tablet){
+      font-size: 1em;
+    }
+
+    @include respondTo(mobile){
+      display: none;
+    }
+  }
+}

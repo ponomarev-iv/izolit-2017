@@ -1,0 +1,166 @@
+/**
+ * Created by Pompo on 19.06.2017.
+ */
+.header{
+  background-color: $bg-color;
+  padding: 20px 0;
+
+
+  & .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respondTo(mobile){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.logo{
+  width: 273px;
+
+  @include respondTo(tablet){
+    width: 33%;
+  }
+
+  @include respondTo(mobile){
+    width: 100%;
+  }
+
+  & img{
+    @include respondTo(tablet){
+      max-width: 210px;
+    }
+  }
+
+  &__descr{
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    padding-left: 73px;
+
+    @include respondTo(tablet){
+      font-size: 14px;
+      padding-left: 55px;
+    }
+
+    @include respondTo(mobile){
+      display: block;
+    }
+  }
+}
+
+.location{
+  padding-left: 50px;
+  position: relative;
+  text-align: right;
+
+  @include respondTo(tablet){
+    padding-left: 40px;
+  }
+
+  @include respondTo(mobile){
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  &:before{
+    position: absolute;
+    background: url('../img/location.svg') no-repeat transparent 50% 50% / contain;
+    content: '';
+    left: 10px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+
+    @include respondTo(tablet){
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+
+  &__txt{
+    font-size: 1em;
+    white-space: nowrap;
+
+    @include respondTo(small){
+      font-size: .85em;
+    }
+  }
+
+  &__link{
+    text-decoration: underline;
+    color: $action-color;
+    font-size: 1em;
+    transition: opacity ease .3s;
+    margin-top: .5em;
+    display: inline-block;
+    text-align: right;
+
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+
+.phone{
+  padding-left: 50px;
+  position: relative;
+  text-align: right;
+
+  @include respondTo(tablet){
+    padding-left: 40px;
+  }
+
+  @include respondTo(mobile){
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  &:before{
+    position: absolute;
+    background: url('../img/phone.svg') no-repeat transparent 50% 50% / contain;
+    content: '';
+    left: 10px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+
+    @include respondTo(tablet){
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__txt{
+    font-size: 1.5em;
+    white-space: nowrap;
+    text-decoration: none;
+    color: $black;
+
+    @include respondTo(small){
+      font-size: 1.3em;
+    }
+
+    &_sm{
+      font-size: 1rem;
+    }
+  }
+
+  &__link{
+    text-decoration: underline;
+    color: $action-color;
+    font-size: 1em;
+    transition: opacity ease .3s;
+    margin-top: .5em;
+    display: inline-block;
+    text-align: right;
+
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
