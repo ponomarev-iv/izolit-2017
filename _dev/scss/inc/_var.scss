@@ -21,7 +21,7 @@ $action-color: #FF8F00;
 
 %container{
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1240px;
   padding: 0 20px;
 
   @include respondTo(small){
