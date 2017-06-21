@@ -55,10 +55,11 @@
       }
 
       @include respondTo(mobile){
-        font-size: 1em;
+        font-size: 1.2em;
         border: none;
         padding: 0;
         line-height: 1.5;
+        margin-bottom: .35em;
       }
 
       &:first-child{
@@ -119,7 +120,7 @@
     @extend %container;
 
     @include respondTo(small){
-      font-size: .6em;
+      font-size: .55em;
     }
   }
 }

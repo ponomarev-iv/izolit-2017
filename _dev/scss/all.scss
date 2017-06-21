@@ -1,10 +1,12 @@
 /**
  * Created by Pompo on 18.06.2017.
  */
-@import "inc/reset";
-@import "inc/media-mixin";
+@import "inc/assets/reset";
+@import "inc/assets/_media-mixin";
 @import "inc/var";
 @import "inc/layout";
+@import "inc/_typo";
+@import "inc/ui";
 
 //blocks
 @import "inc/blocks/header";
@@ -13,3 +15,10 @@
 @import "inc/blocks/hero";
 @import "inc/blocks/mobile-menu";
 @import "inc/blocks/footer";
+@import "inc/blocks/section";
+
+//assets
+@import "inc/assets/swiper";
+
+//helpers
+@import "inc/helpers";

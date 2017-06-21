@@ -1,0 +1,27 @@
+/**
+ * Created by Pompo on 22.06.2017.
+ */
+.btn{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 999em;
+  text-align: center;
+  height: 50px;
+  line-height: 48px;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $white;
+  background-color: $main-color;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity ease .3s;
+
+  &:hover{
+    text-decoration: none;
+    opacity: .85;
+  }
+}

@@ -12,6 +12,17 @@ function mobileMenu(){
     })
 }
 
+function swiperInit() {
+    var mySwiper = new Swiper ('#img-slide', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: 4000,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    })
+}
+
 $(document).ready(function(){
     mobileMenu();
+    swiperInit();
 });

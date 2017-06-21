@@ -20,6 +20,7 @@
 
 .logo{
   width: 273px;
+  text-align: left;
 
   @include respondTo(tablet){
     width: 33%;

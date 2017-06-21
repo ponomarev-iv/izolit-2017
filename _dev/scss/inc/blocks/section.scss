@@ -1,0 +1,19 @@
+/**
+ * Created by Pompo on 22.06.2017.
+ */
+.section{
+  padding: 3.5rem 0;
+
+  @include respondTo(mobile){
+    padding: 2.5rem 0;
+  }
+
+  &_bg-white{
+    background-color: $white;
+  }
+
+  &__btn{
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+}

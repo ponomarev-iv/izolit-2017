@@ -39,3 +39,12 @@ img{
 .footer {
   flex: 0 0 auto;
 }
+
+.unit-row{
+  display: flex;
+  justify-content: space-between;
+
+  @include respondTo(mobile){
+    flex-direction: column;
+  }
+}
