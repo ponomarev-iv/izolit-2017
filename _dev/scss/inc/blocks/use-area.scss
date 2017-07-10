@@ -1,0 +1,50 @@
+.use-area{
+    text-align: center;
+    width: 32%;
+
+    @include respondTo(mobile){
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    &__img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+
+        @include respondTo(tablet){
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    &__title{
+        color: $main-color;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin: .5em 0;
+
+        @include respondTo(tablet){
+            font-size: 1.25em;
+        }
+    }
+
+    &__txt{
+        color: $black;
+        line-height: 1.3;
+        width: 80%;
+        margin: 0 auto;
+
+        @include respondTo(tablet){
+            font-size: .85em;
+        }
+
+        @include respondTo(small){
+            width: 100%;
+        }
+    }
+}

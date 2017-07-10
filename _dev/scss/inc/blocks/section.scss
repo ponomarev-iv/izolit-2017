@@ -11,6 +11,12 @@
   &_bg-white{
     background-color: $white;
   }
+  
+  &_bg-gray{
+     border-top: 1px solid $border-color;
+     border-bottom: 1px solid $border-color;
+    background-color: $bg-color;
+  }
 
   &__btn{
     text-align: center;
