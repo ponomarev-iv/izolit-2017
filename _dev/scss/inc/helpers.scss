@@ -4,3 +4,25 @@
 #img-slide{
   margin-bottom: 10px;
 }
+
+.border-bottom{
+  border-bottom: 1px solid $border-color;
+}
+
+.link-sertifikat{
+  width: 140px;
+  height: 200px;
+  margin: .5em 1em 0 0;
+  display: inline-block;
+  border: 1px solid $border-color;
+  padding: 2px;
+
+  &:last-of-type{
+    margin-right: 0;
+  }
+
+  @include respondTo(tablet){
+    width: 120px;
+    height: auto;
+  }
+}
