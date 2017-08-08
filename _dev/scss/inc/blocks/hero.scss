@@ -66,4 +66,16 @@
       display: none;
     }
   }
+
+  &_contact{
+    background: url('../img/hero-contact.jpg') no-repeat scroll 50% 0 / cover;
+    padding-bottom: 9.375%;
+    width: 100%;
+  }
+
+  &_page{
+    background: url('../img/hero-page.jpg') no-repeat scroll 50% 0 / cover;
+    padding-bottom: 9.375%;
+    width: 100%;
+  }
 }

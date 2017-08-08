@@ -1,0 +1,25 @@
+/**
+ * Created by Pompo on 08.08.2017.
+ */
+.table{
+  width: 100%;
+  border: 1px solid $border-color;
+  margin: 2em 0;
+
+  & th{
+    font-weight: 700;
+    text-align: center;
+  }
+
+  & td, th{
+    padding: .5em;
+    vertical-align: middle;
+    border: 1px solid $border-color;
+  }
+  
+  & tr{
+    &:nth-child(2n){
+      background-color: #f2f2f2;
+    }
+  }
+}

@@ -54,3 +54,18 @@ img{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.col-50{
+  width: 49%;
+
+  @include respondTo(mobile){
+    width: 100%;
+  }
+
+  &:first-of-type{
+
+    @include respondTo(mobile){
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/**
+ * Created by Pompo on 08.08.2017.
+ */
+
+.form{
+  border: 1px solid $border-color;
+  border-radius: .5em;
+  padding: 1.5em;
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+    flex-wrap: wrap;
+
+    &:last-of-type{
+      padding-bottom: 0;
+    }
+  }
+
+  &__col{
+    width: 47%;
+
+    @include respondTo(tablet){
+      width: 100%;
+    }
+
+    &:first-of-type{
+      @include respondTo(tablet){
+        padding-bottom: 1em;
+      }
+    }
+
+    &_w100{
+      width: 100%;
+    }
+  }
+
+  &__lbl{
+    font-weight: 700;
+    color: $black;
+    padding-left: .5em;
+    font-size: 1em;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: .3em;
+  }
+
+  &__inp{
+    width: 100%;
+    height: 46px;
+    box-sizing: border-box;
+    padding: .5em;
+    border-radius: .5em;
+    border: 1px solid $border-color;
+    font-size: 1em;
+
+    &:focus{
+      border-color: $main-color;
+      background-color: rgba(25,116,147,.2);
+    }
+  }
+
+  &__textarea{
+    @extend .form__inp;
+
+    height: auto;
+  }
+
+  &__btn{
+    @extend .btn;
+
+    margin: 0 auto;
+    font-size: 1.3em;
+  }
+}

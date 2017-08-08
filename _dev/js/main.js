@@ -13,34 +13,50 @@ function mobileMenu(){
 }
 
 function swiperInit() {
-    var mySwiper = new Swiper ('#img-slide', {
-        direction: 'horizontal',
-        loop: true,
-        autoplay: 4000,
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    })
+    if($('#img-slide').length){
+        var mySwiper = new Swiper ('#img-slide', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: 4000,
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        })
+    }
+
+    else return false;
+
 }
 
 function initPopup(){
-    $('.js-popup-img').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        closeBtnInside: false,
-        fixedContentPos: true,
-        mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-        image: {
-            verticalFit: true
-        },
-        zoom: {
-            enabled: true,
-            duration: 300 // don't foget to change the duration also in CSS
+    if($('.js-popup-img').length){
+        $('.js-popup-img').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            fixedContentPos: true,
+            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+            image: {
+                verticalFit: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300 // don't foget to change the duration also in CSS
+            }
+        });
+    }
+}
+
+function activateNavMenu(){
+        if ($('.nav__wrap').length){
+            console.log('надо сделать подсветку меню');
         }
-    });
+        else return false;
 }
 
 $(document).ready(function(){
     mobileMenu();
+    activateNavMenu();
     swiperInit();
     initPopup();
+
 });
