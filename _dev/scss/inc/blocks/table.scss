@@ -4,17 +4,23 @@
 .table{
   width: 100%;
   border: 1px solid $border-color;
-  margin: 2em 0;
+  margin: 1em 0 3em;
 
   & th{
     font-weight: 700;
     text-align: center;
+    font-size: 1.1em;
   }
 
   & td, th{
-    padding: .5em;
+    padding: .75em;
     vertical-align: middle;
     border: 1px solid $border-color;
+    line-height: 1.35;
+  }
+
+  & td{
+    font-size: .85em;
   }
   
   & tr{

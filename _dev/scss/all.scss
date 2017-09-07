@@ -2,6 +2,7 @@
  * Created by Pompo on 18.06.2017.
  */
 @import "inc/assets/reset";
+@import "inc/assets/fonts";
 @import "inc/assets/_media-mixin";
 @import "inc/var";
 @import "inc/layout";
@@ -22,6 +23,7 @@
 @import "inc/blocks/contact";
 @import "inc/blocks/form";
 @import "inc/blocks/table";
+@import "inc/blocks/breadcrumbs";
 
 //assets
 @import "inc/assets/swiper";

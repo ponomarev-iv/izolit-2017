@@ -42,6 +42,7 @@
     top: -10px;
     padding-left: 73px;
     white-space: nowrap;
+    color: $black;
 
     @include respondTo(tablet){
       font-size: 14px;

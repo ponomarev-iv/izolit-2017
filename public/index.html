@@ -8,7 +8,6 @@
     <meta name="description" content="Производство и продажа ткани с тефлоновым покрытием. В компании Изолит можно купить ткань с тефлоновым покрытием." />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
     <title>Тефлоновые фторопластовые ткани или ткани с тефлоновым покрытием</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
@@ -17,10 +16,10 @@
         <!-- START heaader -->
         <header class="header">
             <div class="container">
-                <div class="logo">
+                <a href="/" class="logo">
                     <img src="img/logo2x.png" alt="" />
                     <span class="logo__descr">полимерное производство</span>
-                </div>
+                </a>
         
                 <div class="location">
                     <p class="location__txt">г. Пермь, ул. Гальперина, 6 к.12</p>
@@ -29,7 +28,7 @@
         
                 <div class="phone">
                     <p><a href="tel:+73422586478" class="phone__txt"><span class="phone__txt_sm">+7(342)</span>&nbsp;258-64-78</a></p>
-                    <a href="#" class="phone__link">написать нам</a>
+                    <a href="contact.html" class="phone__link">написать нам</a>
                 </div>
         
                 <div class="mobile-btn js-mobile">
@@ -68,7 +67,8 @@
                 </nav>
         
                 <div class="nav__search">
-                    <div class="search">Поиск по сайту</div>
+                    <!--<div class="search">Поиск по сайту</div>-->
+                    <div class="search ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://izolit.net/search-result.html','arrow':false,'bg':'transparent','fontsize':16,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по izolt.net','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2306072,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Поиск по сайту','input_placeholderColor':'#333333','input_borderColor':'#ffffff'}"><form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8"><input type="hidden" name="searchid" value="2306072"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value="utf-8"/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div><style type="text/css">.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="section__btn">
-                    <a href="#" class="btn">Заказать</a>
+                    <a href="#popup-form" class="btn js-popup-form">Заказать</a>
                 </div>
             </div>
         </section>
@@ -323,6 +323,38 @@
 
     </div>
 
+    <!-- START popup-order -->
+    <form id="popup-form" class="white-popup-block mfp-hide">
+        <h3 class="popup-title">Сделать заказ</h3>
+        <fieldset style="border:0;">
+            <p class="popup-txt">Для того, чтобы оставить заявку &mdash;&nbsp;заполните ВСЕ поля ниже:</p>
+            <div  class="form">
+                <div class="form__row">
+                    <div class="form__col">
+                        <label for="name" class="form__lbl">Имя</label>
+                        <input type="txt" name="name" id="name" class="form__inp" placeholder="Фамилия Имя" required autofocus required />
+                    </div>
+                    <div class="form__col">
+                        <label for="email" class="form__lbl">E-mail</label>
+                        <input type="email" name="email" id="email" class="form__inp" placeholder="mail@mail.ru" required />
+                    </div>
+                </div>
+    
+                <div class="form__row">
+                    <div class="form__col form__col_w100">
+                        <label for="mess" class="form__lbl">Сообщение</label>
+                        <textarea class="form__textarea" name="mess" id="mess" cols="30" rows="6" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                </div>
+    
+                <div class="form__row">
+                    <button class="form__btn">Отправить</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <!-- END popup-order -->
+
     <!-- START footer -->
     <footer class="footer">
         <div class="container">
@@ -333,11 +365,11 @@
                 </div>
                 <nav class="footer__nav">
                     <a href="/">Главная</a>
-                    <a href="#">Продукция</a>
-                    <a href="#">Область применения</a>
-                    <a href="#">Прайс-лист</a>
-                    <a href="#">Карта сайта</a>
-                    <a href="#">Контакты</a>
+                    <a href="produkciya.html">Продукция</a>
+                    <a href="oblast-primineniya.html">Область применения</a>
+                    <a href="lakotkan-tsena.html">Прайс-лист</a>
+                    <!--<a href="site-map.html">Карта сайта</a>-->
+                    <a href="contact.html">Контакты</a>
                 </nav>
             </div>
     

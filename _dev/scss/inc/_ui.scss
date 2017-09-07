@@ -25,3 +25,20 @@
     opacity: .85;
   }
 }
+
+.list{
+  margin: 1rem 1rem 3rem;
+
+  & li{
+    line-height: 1.25;
+    padding-bottom: .5em;
+
+    &:last-of-type{
+      padding-bottom: 0;
+    }
+
+    & b{
+      font-weight: 700;
+    }
+  }
+}

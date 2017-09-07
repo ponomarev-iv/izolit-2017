@@ -1,0 +1,42 @@
+/**
+ * Created by Pompo on 07.09.2017.
+ */
+.breadcrumbs{
+  text-align: right;
+  margin-bottom: 2em;
+  margin-top: -1.5em;
+
+  &__item{
+    text-decoration: underline;
+    color: $action-color;
+    transition: opacity ease .33s;
+    position: relative;
+    padding-right: 1em;
+    line-height: 1.2;
+
+    &:after{
+      position: absolute;
+      content: '/';
+      top: 2px;
+      right: .2em;
+    }
+
+    &:hover{
+      opacity: .75;
+    }
+
+    &_current{
+      padding-right: 0;
+      text-decoration: none;
+      color: $black;
+
+      &:after{
+        display: none;
+      }
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

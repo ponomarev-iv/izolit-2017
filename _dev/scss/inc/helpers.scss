@@ -26,3 +26,35 @@
     height: auto;
   }
 }
+
+sup{
+  font-size: .65em;
+  position: relative;
+  top: -0.5em;
+}
+
+.white-popup-block{
+  background-color: $white;
+  max-width: 640px;
+  margin: 20px auto;
+  padding: 2em;
+  position: relative;
+  width: auto;
+}
+
+.popup-title{
+  font-size: 2em;
+  text-align: center;
+  color: $main-color;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+.popup-txt{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.ya-site-form__search-input-layout-r{
+  display: none;
+}
